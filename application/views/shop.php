@@ -40,7 +40,7 @@
     <a href="#">2</a>
     <a href="#"><i class="fal fa-long-arrow-alt-right"></i></a>
 </section>
- 
+  
 <section id="newsletter" class="section-p1 section-m1">
     <div class="newstext">
         <h4>Sign up for Newsletter</h4>
