@@ -18,11 +18,11 @@
         <a href="#"><img src="<?php echo IMG;?>logo.png" class="logo" alt=""></a>
         <div>
             <ul id="navbar">
-                <li><a href="<?php echo URL;?>home">Home</a></li>
-                <li><a href="<?php echo URL;?>home/shop">Shop</a></li>
-                <li><a href="<?php echo URL;?>home/blog">Blog</a></li>
-                <li><a href="<?php echo URL;?>home/about">About</a></li>
-                <li><a href="<?php echo URL;?>home/contact">Contact</a></li>
+                <li><a href="<?php echo URL;?>index">Home</a></li>
+                <li><a href="<?php echo URL;?>index/shop">Shop</a></li>
+                <li><a href="<?php echo URL;?>index/blog">Blog</a></li>
+                <li><a href="<?php echo URL;?>index/about">About</a></li>
+                <li><a href="<?php echo URL;?>index/contact">Contact</a></li>
                 <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
                 <a href="#" id="close"><i class="fa-solid fa-xmark"></i></i></a>
             </ul>

@@ -10,7 +10,7 @@
         <div class="row">
             <?php foreach ($products as $product) { ?>
             <div class="col-lg-3">
-                <div class="pro" onclick="window.location.href='<?php echo site_url('home/product/'.$product->id); ?>';">
+                <div class="pro" onclick="window.location.href='<?php echo site_url('index/product/'.$product->id); ?>';">
 
                     <img src="<?php echo IMG;?>/products/<?php echo $product->image;?>" alt="">
                     <div class="des">

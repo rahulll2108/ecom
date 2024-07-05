@@ -22,6 +22,28 @@ class ProductModel extends CI_Model
         return $query->result();
     }
 
+    public function get_new_random_products($limit)
+    {
+        $this->db->order_by('RAND()');
+        $this->db->limit($limit);
+        $query = $this->db->get('products');
+        return $query->result();
+    }
+
+    public function get_first_8_products()
+    {
+        $this->db->limit(8, 0);
+        $query = $this->db->get('products');
+        return $query->result();
+    }
+    
+    public function get_next_8_products()
+    {
+        $this->db->limit(8, 8);
+        $query = $this->db->get('products');
+        return $query->result();
+    }
+
 }
 
 ?>

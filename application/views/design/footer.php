@@ -19,11 +19,11 @@
 
     <div class="col">
         <h4>About</h4>
-        <a href="#">About Us</a>
+        <a href="<?php echo URL;?>index/about">About Us</a>
         <a href="#">Delivery Information</a>
         <a href="#">Privacy Policy</a>
         <a href="#">Terms & Conditions</a>
-        <a href="#">Contact Us</a>
+        <a href="<?php echo URL;?>index/contact">Contact Us</a>
     </div>
 
     <div class="col">
@@ -39,14 +39,18 @@
         <h4>Install App</h4>
         <p>From App Store or Play Store</p>
         <div class="row">
-            <img src="<?php echo IMG;?>pay/app.jpg" alt="">
-            <img src="<?php echo IMG;?>pay/play.jpg" alt="">
+            <div class="col-lg-6">
+                <img src="<?php echo IMG;?>pay/app.jpg" alt="">
+            </div>
+            <div class="col-lg-6">
+                <img src="<?php echo IMG;?>pay/play.jpg" alt="">
+            </div>
         </div>
         <p>Secured Payment Gateway</p>
         <img src="<?php echo IMG;?>pay/pay.png" alt="pay">
     </div>
     <div class="copyright">
-        <p>&copy; Copyright </p>
+        <p>&copy; Copyright </p>    
     </div>
 </footer>
 <script src="<?php echo JS;?>script.js"></script>

@@ -1,13 +1,13 @@
 <section id="prodetails" class="section-p1">
     <div class="single-pro-image">
 
-        <a href="<?php echo URL;?>home/product/<?php echo $product->id; ?>">
+        <a href="<?php echo URL;?>index/product/<?php echo $product->id; ?>">
             <img src="<?php echo IMG;?>/products/<?php echo $product->image;?>" width="100%" id="MainImg" alt="">
         </a>
         <div class="small-img-group">
             <?php foreach ($randomImages as $randomImage) { ?>
             <div class="small-img-col">
-                <a href="<?php echo URL;?>home/product/<?php echo $randomImage->id; ?>">
+                <a href="<?php echo URL;?>index/product/<?php echo $randomImage->id; ?>">
                     <img src="<?php echo IMG;?>/products/<?php echo $randomImage->image;?>" width="100%"
                         class="small-img" alt="">
                 </a>
@@ -46,17 +46,17 @@
     <div class="pro-container">
         <div>
             <div class="row">
-                <?php foreach ($randomImages as $randomImage) { ?>
+                <?php foreach ($newrandomImages as $newrandomImage) { ?>
                 <div class="col-lg-3">
-                    <!-- <div class="pro"> -->
-                    <a href="<?php echo URL;?>home/product/<?php echo $randomImage->id; ?>">
+                    <div class="pro">
+                    <a href="<?php echo URL;?>index/product/<?php echo $newrandomImage->id; ?>">
                         <div class="des">
-                            <img src="<?php echo IMG;?>/products/<?php echo $randomImage->image;?>" width="100%"
+                            <img src="<?php echo IMG;?>/products/<?php echo $newrandomImage->image;?>" width="100%"
                                 id="MainImg" alt="">
                             <div
-                                onclick="window.location.href='<?php echo site_url('home/product/'.$randomImage->id); ?>';">
-                                <span><?php echo $randomImage->brand;?></span>
-                                <h5><?php echo $randomImage->name;?></h5>
+                                onclick="window.location.href='<?php echo site_url('index/product/'.$newrandomImage->id); ?>';">
+                                <span><?php echo $newrandomImage->brand;?></span>
+                                <h5><?php echo $newrandomImage->name;?></h5>
                                 <div class="star">
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
@@ -65,13 +65,13 @@
                                     <i class="fas fa-star"></i>
                                 </div>
                                 <h4>
-                                    <h2>$<?php echo $randomImage->price;?></h2>
+                                    <h4>$<?php echo $newrandomImage->price;?></h4>
                                 </h4>
                             </div>
-                            <a href="#"><i class="fa-solid fa-cart-shopping"></i></i></a>
+                            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
                         </div>
                     </a>
-                    <!-- </div> -->
+                    </div>
                 </div>
                 <?php } ?>
             </div>

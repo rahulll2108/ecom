@@ -212,6 +212,10 @@ body{
     position: relative;
 }
 
+#product1 .pro a{
+    text-decoration: none;
+}
+
 #product1 .pro img{
     width: 100%;
     border-radius: 20px;
@@ -472,10 +476,6 @@ footer .col{
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 20px;
-}
-
-footer img{
-    padding-bottom: 20px;
 }
 
 footer .logo{

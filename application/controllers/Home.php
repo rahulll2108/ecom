@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Home extends LD_Controller {
+class Index extends LD_Controller {
 
 	function __construct()
 	{
@@ -10,11 +10,12 @@ class Home extends LD_Controller {
 	}
 	
 	public function index()
-	{
-		$html = $this->load->view('home', "", true);
-		$this->displayAppPage('E-Commerce', $html);
-
-	}
+    {
+        $data['first_section_products'] = $this->ProductModel->get_first_8_products();
+        $data['second_section_products'] = $this->ProductModel->get_next_8_products();
+        $html = $this->load->view('home', $data, true);
+        $this->displayAppPage('E-Commerce', $html);
+    }
 
 	public function about()
 	{
@@ -36,7 +37,6 @@ class Home extends LD_Controller {
 	
 	public function shop()
 	{
-
 		$data['products'] = $this->ProductModel->get_all_products();
 		$html = $this->load->view('shop', $data, true);
 		$this->displayAppPage('Shop', $html);
@@ -46,6 +46,7 @@ class Home extends LD_Controller {
 	{
 		$data['product'] = $this->ProductModel->get_product_by_id($id);
 		$data['randomImages'] = $this->ProductModel->get_random_products(4);
+		$data['newrandomImages'] = $this->ProductModel->get_new_random_products(4);
 		$html = $this->load->view('product', $data, true);
 		$this->displayAppPage('Product Details', $html);
 	}
